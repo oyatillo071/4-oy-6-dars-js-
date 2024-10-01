@@ -26,7 +26,7 @@
 // alert("3-mashq foydalanuvchi kiritkan sonlarni kvadratini 1 dan shu songacha bo'lgan qiymatlar uchun ekranga chiqaring");
 
 document.getElementById('first__btn').addEventListener('click', function () {
-    let forFirstValue = document.getElementById('user__input--value').value;
+    let forFirstValue =parseInt(document.getElementById('user__input--value').value);
     for (let i = 1; i <=(forFirstValue**2); i++) {
         alert(i);
     }
@@ -82,7 +82,7 @@ document.getElementById('first__btn').addEventListener('click', function () {
 // alert("8-mashq foydalanuvchi kiritkan sonning 1dan osha songacha bolgan kopaytiruvchilarini ekranga chiqaring");
 
 document.getElementById('eight__btn').addEventListener('click', function () {
-    let userEightValue= document.getElementById('user__eight--value').value;
+    let userEightValue= parseInt(document.getElementById('user__eight--value').value);
    
     for (let i = userEightValue; i >= 1; i--) {
         if (userEightValue % i == 0) {
@@ -148,8 +148,8 @@ document.getElementById('eight__btn').addEventListener('click', function () {
 // 13 mashq
 // alert("13-mashq foydalanuvchi kiritkan ikki son orasidagi barcha sonlar ekranga chiqaradi");
 document.getElementById('thirteen__btn').addEventListener('click', function () {
-    let userThirteenValueFirst= document.getElementById('user__thirteen--first--value').value;
-    let userThirteenValueSecond= document.getElementById('user__thirteen--second--value').value;
+    let userThirteenValueFirst=parseInt(document.getElementById('user__thirteen--first--value').value);
+    let userThirteenValueSecond= parseInt(document.getElementById('user__thirteen--second--value').value);
    
     for (let i = userThirteenValueFirst; i <=userThirteenValueSecond; i++) {
         alert(i);
@@ -160,7 +160,7 @@ document.getElementById('thirteen__btn').addEventListener('click', function () {
 // 14 mashq
 // alert("14-mashq Foydalanuvchi tomonidan kiritilgan sonning bo‘linuvchilarini toping va ekranga chiqaring.");
 document.getElementById('fourteen__btn').addEventListener('click', function () {
-    let userFourteenValue= document.getElementById('user__fourteen--value').value;
+    let userFourteenValue=parseInt(document.getElementById('user__fourteen--value').value);
    for (let i = 1; i <userFourteenValue+1; i++) {
     if (userFourteenValue%i==0) {
         alert(i);
@@ -205,7 +205,7 @@ document.getElementById('fourteen__btn').addEventListener('click', function () {
 // 18 mashq
 // alert("18-mashq Foydalanuvchi tomonidan kiritilgan sonning barcha bo‘linuvchilarini toping va ularning yig‘indisini ekranga chiqaring");
 document.getElementById('eightteen__btn').addEventListener('click', function () {
-    let userEightteenValue= document.getElementById('user__eightteen--value').value;
+    let userEightteenValue= parseInt(document.getElementById('user__eightteen--value').value);
     let eightteenSum=0;
 
     for (let i = 0; i <= userEightteenValue; i++) {
@@ -235,8 +235,8 @@ document.getElementById('eightteen__btn').addEventListener('click', function () 
 // alert("20-mashq Foydalanuvchi tomonidan kiritilgan ikkita sonning orasidagi barcha juft sonlarni ekranga chiqaring");
 
 document.getElementById('twenty__btn').addEventListener('click', function () {
-    let userTwentyValueFirst= document.getElementById('user__twenty--first--value').value;
-    let userTwentyValueSecond= document.getElementById('user__twenty--second--value').value;
+    let userTwentyValueFirst=parseInt(document.getElementById('user__twenty--first--value').value);
+    let userTwentyValueSecond=parseInt(document.getElementById('user__twenty--second--value').value);
    
     for (let i = userTwentyValueFirst; i <=userTwentyValueSecond; i++) {
       if (i%2==0) {
@@ -264,7 +264,7 @@ document.getElementById('twenty__btn').addEventListener('click', function () {
 // 22 mashq
 // alert("22-mashq Foydalanuvchi tomonidan kiritilgan sonning faktorialini hisoblang va natijani ekranga chiqaring");
 document.getElementById('twentytwo__btn').addEventListener('click', function () {
-    let userTwentytwoValue= document.getElementById('user__twentytwo--value').value;
+    let userTwentytwoValue=parseInt(document.getElementById('user__twentytwo--value').value);
     let twentytwoSum=1;
 
     for (let i = 1; i <= userTwentytwoValue; i++) {
@@ -302,16 +302,16 @@ document.getElementById('twentytwo__btn').addEventListener('click', function () 
 // alert("25-mashq Foydalanuvchi tomonidan kiritilgan ikkita sonning orasidagi sonlardan faqat toq sonlarni ekranga chiqaring va ularning yig‘indisini toping");
 
 document.getElementById('twentyfive__btn').addEventListener('click', function () {
-    let userTwentyfiveValueFirst= document.getElementById('user__twentyfive--first--value').value;
-    let userTwentyfiveValueSecond= document.getElementById('user__twentyfive--second--value').value;
+    let userTwentyfiveValueFirst= parseInt(document.getElementById('user__twentyfive--first--value').value);
+    let userTwentyfiveValueSecond=parseInt(document.getElementById('user__twentyfive--second--value').value);
    let twentyfiveSum=0;
 
     for (let i = userTwentyfiveValueFirst; i <=userTwentyfiveValueSecond; i++) {
-      if (i%2==1) {
+      if (i % 2 == 1) {
           alert(i);
           twentyfiveSum+=i;
       }
     }
-    alert("tig'indisi:  "+twentyfiveSum);
+    alert("Yig'indisi:  " + twentyfiveSum);
     
 });
